@@ -1,0 +1,36 @@
+body{
+    background-color: rgb(233, 233, 233);
+}
+
+h1{
+    text-align: center;
+}
+
+/* border not working */
+img{
+    height: 200px;
+    width: 200px;
+    border: 10px;
+    border-width: 5px;
+    border-color: rgb(148, 84, 208);
+    border-style: solid;
+    border-radius: 50%;
+}
+
+.card{
+    height: auto;
+}
+
+.contact-form{
+    position: relative;
+    left: 25%;
+}
+
+.nav{
+    background-color: rgb(148, 84, 208);
+}
+
+.nav-link{
+    color: white;
+}
+
