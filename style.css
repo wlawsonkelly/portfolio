@@ -9,7 +9,6 @@ h1{
 img{
     height: 200px;
     width: 200px;
-    border: 10px;
     border-width: 5px;
     border-color: rgb(148, 84, 208);
     border-style: solid;
@@ -43,6 +42,15 @@ p{
 
 .navbar-brand{
     color: white;
+}
+
+.footer{
+    margin: 0 auto;
+    
+}
+
+.top-container{
+    margin-bottom: 100px;
 }
 
 @media screen and (max-width: 760px) {
