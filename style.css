@@ -1,56 +1,136 @@
-body{
-    background-color: rgb(233, 233, 233);
-}
+/* gen */
 
-h1{
+html, body {
+    height: 100%;
+  }
+  
+  body {
+    background: black;
+  }
+  
+  h1{
     text-align: center;
 }
-
-img{
-    height: 200px;
-    width: 200px;
-    border-width: 5px;
-    border-color: rgb(148, 84, 208);
-    border-style: solid;
-    border-radius: 50%;
+/* classes */
+  .nav{
+    background-color: rgb(29, 29, 29);
+    border-bottom: 2px solid rgb(69, 69, 69);
+   
 }
-
-p{
-    text-align: left;
-}
-
-.card{
-    height: auto;
-}
-
-.contact-form{
-    position: relative;
-    left: 25%;
-}
-
-.nav{
-    background-color: rgb(148, 84, 208);
-}
-
-.fixed-bottom{
-    background-color: rgb(148, 84, 208);
-}
-
 .nav-link{
-    color: white;
+  color: rgb(180, 40, 180);
 }
 
 .navbar-brand{
-    color: white;
+    color: rgb(180, 40, 180);
 }
 
 .footer{
     margin: 0 auto;
-    
 }
 
-.top-container{
-    margin-bottom: 100px;
+.fixed-bottom{
+    background-color: rgb(29, 29, 29);
+    border-top: 2px solid rgb(69, 69, 69);
+
+}
+
+/* cards */
+.card-list {
+  display: flex;
+  padding: 20px;
+  /* margin-left: -130px; */
+}
+
+/* .card-list::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+.card-list::-webkit-scrollbar-thumb {
+  background: #201c29;
+  border-radius: 10px;
+  box-shadow: inset 2px 2px 2px hsla(0,0%,100%,.25), inset -2px -2px 2px rgba(0,0,0,.25);
+}
+
+.card-list::-webkit-scrollbar-track {
+  background: linear-gradient(90deg,#201c29,#201c29 1px,#17141d 0,#17141d);
+} */
+.inner-card {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.card{
+  height: 240px;
+  width: 240px;
+  /* min-width: 250px; */
+  padding: 1.5rem;
+  border-radius: 16px;
+  background: #17141d;
+  box-shadow: -1rem 0 3rem #000;
+  display: flex;
+  flex-direction: column;
+  transition: .2s;
+  margin: 0;
+  /* scroll-snap-align: start; */
+  clear: both;
+  position: relative;
+}
+.card-front, .card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+
+
+.card:focus-within~.card, .card:hover~.card {
+  transform: translateX(130px);
+  
+}
+
+.card:hover .inner-card {
+  transform: translateY(-1rem);
+  transform: rotateY(180deg);
+}
+
+
+.card:not(:first-child) {
+  margin-left: -130px;
+}
+
+.card-back {
+  background-color: dodgerblue;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+
+
+
+/* ids */
+
+#profile-pic{
+    height: 200px;
+    width: 200px;
+    border-width: 5px;
+    border-color: rgb(180, 40, 180);;
+    border-style: solid;
+    border-radius: 50%;
+}
+
+#card-img{
+  height: 200px;
+    width: 200px;
+    border-width: 5px;
+    border-color: rgb(180, 40, 180);
+    border-style: solid;
 }
 
 @media screen and (max-width: 760px) {
@@ -59,4 +139,5 @@ p{
         left: 0;
     }
 }
+
 
