@@ -2,6 +2,7 @@
 
 html, body {
     height: 100%;
+    color: white;
   }
   
   body {
@@ -10,6 +11,7 @@ html, body {
   
   h1{
     text-align: center;
+    color: white;
 }
 /* classes */
   .nav{
@@ -32,29 +34,14 @@ html, body {
 .fixed-bottom{
     background-color: rgb(29, 29, 29);
     border-top: 2px solid rgb(69, 69, 69);
-
 }
 
 /* cards */
 .card-list {
   display: flex;
   padding: 20px;
-  /* margin-left: -130px; */
 }
 
-/* .card-list::-webkit-scrollbar {
-  width: 10px;
-  height: 10px;
-}
-.card-list::-webkit-scrollbar-thumb {
-  background: #201c29;
-  border-radius: 10px;
-  box-shadow: inset 2px 2px 2px hsla(0,0%,100%,.25), inset -2px -2px 2px rgba(0,0,0,.25);
-}
-
-.card-list::-webkit-scrollbar-track {
-  background: linear-gradient(90deg,#201c29,#201c29 1px,#17141d 0,#17141d);
-} */
 .inner-card {
   position: relative;
   width: 100%;
@@ -106,13 +93,17 @@ html, body {
 }
 
 .card-back {
-  background-color: dodgerblue;
+  background-color: #17141d;;
   color: white;
   transform: rotateY(180deg);
 }
 
 
-
+.app-store-img {
+  position: relative;
+  width: 90%;
+  height: 30%;
+}
 
 /* ids */
 
