@@ -48,7 +48,9 @@ html, body {
   height: 100%;
   text-align: center;
   transition: transform 0.8s;
+  -webkit-transition: transform 0.8s;
   transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
 }
 
 .card{
@@ -62,6 +64,7 @@ html, body {
   display: flex;
   flex-direction: column;
   transition: .2s;
+  -webkit-transition: .2s;
   margin: 0;
   /* scroll-snap-align: start; */
   clear: both;
@@ -75,18 +78,18 @@ html, body {
   backface-visibility: hidden;
 }
 
-
-
 .card:focus-within~.card, .card:hover~.card {
   transform: translateX(130px);
-  
+  -webkit-transform: translateX(130px);
 }
 
 .card:hover .inner-card {
   transform: translateY(-1rem);
   transform: rotateY(180deg);
-}
 
+  -webkit-transform: translateY(-1rem);
+  -webkit-transform: rotateY(180deg);
+}
 
 .card:not(:first-child) {
   margin-left: -130px;
